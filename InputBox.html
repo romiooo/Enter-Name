@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+	*{font-family:arial;}
+
+	body{background-image: url('https://images.unsplash.com/photo-1517639493569-5666a7b2f494?				ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGNhcnRvb24lMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');background-					position:center;background-size:cover;background-repeat:no-repeat;}
+
+	.parent{display:flex;height:100vh;justify-content:center;align-items:center;}
+	
+	form{border:none;border-radius:80% 80% 50% 10%;height:200px;width:400px;padding:100px;margin:auto;
+		background:purple;box-shadow:inset 0px 0px 30px pink;color:white;}
+
+	p{font-size:50px;}
+
+	input[type=text]{border:none;height:22px;background:creame;border-radius:5px;}
+
+	::placeholder{color:purple;}
+	
+	input[type=button]{height:50px;width:100px;border-radius:80% 80% 50% 20%;margin-left:100px;background:purple;color:white;box-shadow:inset 0px 0px 7px 				pink;border:none;}
+    </style>
+
+    
+  </head>
+  <body>
+	<div class="parent">
+		<div>
+			<form>
+				<p>Enter Your Name</p>
+	
+				<input type="text" id="fname" name="firstname" placeholder="firstname"> <br /> <br />
+				<input type="text" id="lname" name="lastname" placeholder="lastname"> 
+
+				<input type="button" value="Submit" id="button">
+			
+				<script>
+					var fname=document.getElementById("fname");
+					var lname=document.getElementById("lname");
+					document.getElementById("button").addEventListener("click",function(){alert('Hello'+" "+fname.value+" "+lname.value);})
+    				</script>
+		
+			</form>	
+		<div>
+	<div>
+  </body>
+</html>
